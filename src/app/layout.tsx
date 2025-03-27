@@ -1,26 +1,17 @@
-import React from 'react';
-import './globals.css';
-
-export const metadata = {
-  title: "photo marketplace",
-  description: "A marketplace for photos",
-};
+import './globals.css'
+import Navigation from './components/Navigation'
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* Add meta tags, favicons, or other global head content here */}
-      </head>
-      <body>
-        <div>
-          {children}
-        </div>
+      <body className="min-h-screen bg-gray-50 perkspotbx">
+        <Navigation />
+        {children}
       </body>
     </html>
-  );
+  )
 }
